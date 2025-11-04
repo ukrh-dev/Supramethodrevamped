@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SUPRA METHOD — Drag GFN method file (UPDATED)</title>
+  <style>
+    /* Simple, retro / minimal look reminiscent of small projects */
+    :root{
+      --bg:#0f1720;
+      --card:#0b1220;
+      --accent:#16a34a;
+      --muted:#a8b3c7;
+      --glass: rgba(255,255,255,0.03);
+      --mono: "Courier New", Courier, monospace;
+    }
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg,#071023 0%, #0b1830 100%);
+      color:#e6eef8;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    .container{
+      max-width:980px;
+      margin:40px auto;
+      padding:28px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:10px;
+      box-shadow: 0 6px 30px rgba(2,6,23,0.6);
+      border:1px solid rgba(255,255,255,0.03);
+    }
+    header{
+      display:flex;
+      gap:16px;
+      align-items:center;
+      margin-bottom:18px;
+    }
+    .logo{
+      width:62px;
+      height:62px;
+      border-radius:10px;
+      background:linear-gradient(135deg,#0ea5a5,#7c3aed);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-family:var(--mono);
+      font-weight:700;
+      color:white;
+      box-shadow: 0 4px 18px rgba(124,58,237,0.16);
+    }
+    h1{font-size:20px;margin:0}
+    p.lead{color:var(--muted); margin:6px 0 18px; font-size:13px}
+    .row{
+      display:flex;
+      gap:20px;
+    }
+    .col{
+      flex:1;
+      min-width:240px;
+    }
+    .card{
+      background:var(--card);
+      padding:18px;
+      border-radius:8px;
+      border:1px solid rgba(255,255,255,0.02);
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:10px 14px;
+      background:linear-gradient(180deg,var(--accent), #0ea58c);
+      color:white;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+      box-shadow: 0 6px 18px rgba(16,185,129,0.12);
+      cursor:pointer;
+      border:0;
+      font-size:14px;
+    }
+    .btn.secondary{
+      background:transparent;
+      border:1px solid rgba(255,255,255,0.06);
+      color:var(--muted);
+      box-shadow:none;
+    }
+    small.muted{color:var(--muted); display:block; margin-top:8px; font-size:12px}
+    .footnote{margin-top:14px; color:var(--muted); font-size:13px}
+    code.inline{background:var(--glass); padding:4px 6px; border-radius:4px; font-family:var(--mono); font-size:13px}
+    /* Confirmation modal */
+    .modal-backdrop{
+      position:fixed;
+      inset:0;
+      display:none;
+      align-items:center;
+      justify-content:center;
+      background:rgba(0,0,0,0.55);
+      z-index:9999;
+    }
+    .modal{
+      background:#071428;
+      padding:18px;
+      border-radius:8px;
+      width:92%;
+      max-width:520px;
+      border:1px solid rgba(255,255,255,0.04);
+      box-shadow: 0 12px 40px rgba(2,6,23,0.7);
+      color:#e6eef8;
+    }
+    .modal h3{margin:0 0 8px 0}
+    .modal p{color:var(--muted); font-size:14px; margin:0 0 14px 0}
+    .modal .row{justify-content:flex-end}
+    .checkbox{
+      display:flex; align-items:center; gap:8px; margin-top:8px; color:var(--muted); font-size:13px;
+    }
+
+    @media (max-width:700px){
+      .row{flex-direction:column}
+      header{gap:10px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <div class="logo">SM</div>
+      <div>
+        <h1>SUPRA METHOD — Drag GFN method file (UPDATED)</h1>
+        <p class="lead">A lightweight page for distributing the updated Drag GFN method file. Click the download button below to open the file.</p>
+      </div>
+    </header>
+
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <h2 style="margin-top:0">Files</h2>
+          <p style="margin:8px 0 14px; color:var(--muted)">Available downloads and quick notes.</p>
+
+          <!-- Replaced link: "Drag GFN method file (UPDATED)" -->
+          <button id="downloadBtn" class="btn" aria-haspopup="dialog" title="Download Drag GFN method file (UPDATED)">
+            ⤓ Drag GFN method file (UPDATED)
+          </button>
+
+          <!-- New button for "Open Clipchamp" -->
+          <a href="ms-clipchamp:" id="clipchampBtn" class="btn secondary" title="Open Clipchamp">
+            Open Clipchamp
+          </a>
+
+          <small class="muted">Files: <code class="inline">Arcade.exe</code> and <code class="inline">UwUTools.exe</code> — hosted at <code class="inline">picteon.dev</code> and <code class="inline">github.com</code></small>
+
+          <div class="footnote">
+            <strong>Important:</strong> these are executable files (.exe). Only proceed if you trust the source. Scanning and code-signing recommended.
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3 style="margin-top:0">About</h3>
+          <p style="color:var(--muted)">This lightweight page intentionally mimics a small developer project site. Use it as an index or mirror. You can change the download URL below to point to any other file if you host it elsewhere.</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <h3 style="margin-top:0">Changelog</h3>
+          <ul style="color:var(--muted); padding-left:18px; margin-top:8px">
+            <li>UPDATED — Drag GFN method file (Arcade.exe) made available (this page)</li>
+            <li>New button: Open Clipchamp added</li>
+          </ul>
+
+          <h3 style="margin-top:12px">Contact</h3>
+          <p style="color:var(--muted)">Place contact info or a link to your repo here.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Confirmation modal -->
+  <div id="modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal" role="document" aria-labelledby="modal-title">
+      <h3 id="modal-title">Download file?</h3>
+      <p>You're about to open an executable file named <strong>Arcade.exe</strong> from <code>https://picteon.dev/files/Arcade.exe</code>. Executable files can harm your system if they are malicious.</p>
+
+      <label class="checkbox">
+        <input type="checkbox" id="confirmCheckbox" />
+        I understand the risks and want to continue
+      </label>
+
+      <div class="row" style="margin-top:14px;">
+        <button id="cancelBtn" class="btn secondary" style="margin-right:8px">Cancel</button>
+        <button id="proceedBtn" class="btn" disabled>Open Arcade.exe</button>
+      </div>
+
